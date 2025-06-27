@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background: linear-gradient(135deg, #ffe066, #ff6f61, #fddb3a, #6bcf63, #59abe3);
+  background-size: 600% 600%;
+  animation: fundoColorido 20s infinite;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #cc0000;
+}
+
+.grafico-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.entrada {
+  margin-top: 30px;
+  text-align: center;
+}
+
+input, button {
+  padding: 6px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.5);
+}
+
+.dados-ocultos .bloco-codigo {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.dados-ocultos:hover .bloco-codigo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Pipoca */
+.pipoca {
+  position: fixed;
+  top: -40px;
+  width: 20px;
+  height: 20px;
+  background: url('https://cdn-icons-png.flaticon.com/512/6974/6974831.png') no-repeat center;
+  background-size: contain;
+  animation: cairPipoca linear infinite;
+  pointer-events: none;
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+@keyframes cairPipoca {
+  0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes fundoColorido {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Bandeirinhas */
+.bandeirinhas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url('https://i.imgur.com/7k5y6O2.png') repeat-x;
+  background-size: contain;
+  z-index: 999;
+}
+
+/* Fogueira */
+.fogueira {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: url('https://i.imgur.com/UWbBpxR.gif') no-repeat center;
+  background-size: contain;
+  z-index: 998;
+}
