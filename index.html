@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Festa Junina - Gráfico</title>
-  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -41,7 +41,6 @@ const dadosManual = [
   <div class="fogueira"></div>
 
   <script>
-    // Dados iniciais
     let labels = ['Pipoca', 'Cachorro-quente', 'Canjica', 'Pé-de-moleque', 'Paçoca'];
     let dados = [12, 8, 6, 7, 5];
 
@@ -74,13 +73,12 @@ const dadosManual = [
         } else {
           labels.push(item);
           dados.push(qtd);
-          graficoItens.data.datasets[0].backgroundColor.push('#'+Math.floor(Math.random()*16777215).toString(16));
+          graficoItens.data.datasets[0].backgroundColor.push('#' + Math.floor(Math.random() * 16777215).toString(16));
         }
         graficoItens.update();
       }
     }
 
-    // Pipocas caindo
     function criarPipoca() {
       const pipoca = document.createElement('div');
       pipoca.className = 'pipoca';

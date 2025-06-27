@@ -12,7 +12,8 @@ h1, h2, h3 {
 }
 
 .grafico-container {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -47,7 +48,6 @@ input:focus {
   pointer-events: auto;
 }
 
-/* Pipoca */
 .pipoca {
   position: fixed;
   top: -40px;
@@ -62,8 +62,14 @@ input:focus {
 }
 
 @keyframes cairPipoca {
-  0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
 }
 
 @keyframes fundoColorido {
@@ -72,7 +78,6 @@ input:focus {
   100% { background-position: 0% 50%; }
 }
 
-/* Bandeirinhas */
 .bandeirinhas {
   position: fixed;
   top: 0;
@@ -84,7 +89,6 @@ input:focus {
   z-index: 999;
 }
 
-/* Fogueira */
 .fogueira {
   position: fixed;
   bottom: 0;
