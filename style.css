@@ -84,7 +84,7 @@ input:focus {
   left: 0;
   width: 100%;
   height: 50px;
-  background: url('https://i.imgur.com/7k5y6O2.png') repeat-x;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/e/ef/Bandeirinhas-festa-junina.png') repeat-x;
   background-size: contain;
   z-index: 999;
 }
@@ -96,7 +96,7 @@ input:focus {
   transform: translateX(-50%);
   width: 100px;
   height: 100px;
-  background: url('https://i.imgur.com/UWbBpxR.gif') no-repeat center;
+  background: url('https://media.tenor.com/B1R5UWycdYgAAAAi/fire-campfire.gif') no-repeat center;
   background-size: contain;
   z-index: 998;
 }
